@@ -1,0 +1,16 @@
+{
+  "name": "mencubatest2",
+  "version": "1.0.0",
+  "description": "mencubaTest2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "author": "aminuddin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
