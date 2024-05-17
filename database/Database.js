@@ -1,5 +1,10 @@
 import pg from "pg";
 import "dotenv/config";
+import createTableTweet from "../model/tweet table/tweet.js";
+// import alterTableTweet from "../model/tweet table/alterTableTweet.js";
+// import deleteTableTweet from "../model/tweet table/deleteTableTweet.js";
+
+
 const { Pool } = pg;
 
 
@@ -17,6 +22,10 @@ export const DatabaseConnection = async () => {
     try{
         await passport.query("SELECT NOW()");
         console.log("DB CONNECTED");
+
+        createTableTweet();
+        // alterTableTweet();
+        // deleteTableTweet();
     } catch(err){
         console.log("DB FAILED")
     }
