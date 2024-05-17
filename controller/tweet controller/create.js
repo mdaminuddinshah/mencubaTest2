@@ -7,6 +7,9 @@ export const uploadFile = (req,res) => {
             message: "file uploaded",
             file: file
         })
+
+        console.log(file);
+        
     } catch(err){
         res.status(404).json({
             message: "cannot upload file"
